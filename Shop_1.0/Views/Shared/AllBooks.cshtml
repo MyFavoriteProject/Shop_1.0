@@ -1,0 +1,18 @@
+﻿@model Shop_1._0.Data.Models.Book
+
+
+<div class="tovar clearfix">
+    <img src="@Model.Img" alt="@Model.Name">
+    <div class="disp-inl-bloc">
+        <h2>Книги: @Model.Name, Автор: @Model.BookAuthor</h2>
+        <p>@Model.ShortDescription</p>
+    </div>
+    <div class="csena">
+        <h4>Цена:<span>@Model.Price.ToString("c")</span></h4>
+        <a href="">Заказать товар</a>
+
+    </div>
+    <form action="">
+        Comment
+    </form>
+</div>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <div class="vxod">
+            <a href="#">Войти</a>
+        </div>
+        <div class="korzina">
+            <a href="/ShopCart/">Корзина</a>
+        </div>
+        <nav class="dws-menu">
+            <ul>
+                <li>
+                    <a href="#">Категории</a>
+                    <ul>
+                        <li><a href="#">Все книги</a></li>
+                        <li><a href="#">Наука</a></li>
+                        <li><a href="#">Художественная литература</a></li>
+                        <li><a href="#">Детективы</a></li>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="#">Фантастика</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            @RenderBody()
+        </article>
+    </section>
+</body>
+</html>
