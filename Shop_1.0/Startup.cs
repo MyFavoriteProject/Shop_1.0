@@ -24,7 +24,6 @@ namespace Shop_1._0
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDBContent>(optoin => optoin.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
-            services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddTransient<IAllBooks, BookRepository>();
             services.AddTransient<IBooksCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
